@@ -12,6 +12,7 @@ void deepSleepForMinutes(int minutesToSleep) {
   //esp_deep_sleep_start();
   //#elif PLATFORM == PLATFORM_ESP8266
   ESP.deepSleep(minutesToSleep * 60 * 1000000);
+  delay(100);
   //#elif
   //delay(minutesToSleep * 60 * 1000);
   //#endif
