@@ -1,5 +1,7 @@
 # Application
 PushMeasurementOnDeepSleep/CurrentBoardInformation.h
+home-logger/accessories.db
+.vscode/ipch
 
 # Prerequisites
 *.d

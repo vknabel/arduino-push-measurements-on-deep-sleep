@@ -14,6 +14,21 @@ def prepareDb()
   return db
 end
 
+get '/' do
+  db = prepareDb
+  # read latest
+  query = <<-SQL
+    SELECT loggedAt, accessory, payload FROM measurement
+    GROUP BY accessory
+    ORDER BY id DESC;
+  SQL
+  measurement = db.execute query
+  measurement.map do |row|
+    loggedAt = DateTime.parse row[0]
+    "#{loggedAt.strftime("%e.%m.%Y %k:%M")} <b>#{row[1]}</b> #{row[2]} <br>"
+  end
+end
+
 get '/accessory/:name' do |name|
   db = prepareDb
   # read latest
