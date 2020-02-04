@@ -3,6 +3,7 @@
         {
             "name": "Mac",
             "includePath": [
+                "./PushMeasurementOnDeepSleep",
                 "/Users/vknabel/Library/Arduino15/packages/esp8266/tools/**",
                 "/Users/vknabel/Library/Arduino15/packages/esp8266/hardware/esp8266/2.4.2/**",
                 "/Users/vknabel/Documents/Arduino/hardware/espressif/esp32/cores/esp32"

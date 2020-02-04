@@ -103,4 +103,7 @@ void setup()
   deepSleepForMinutes(EVOLUTION_SLEEP);
 }
 
-void loop() {}
+void loop()
+{
+  deepSleepForMinutes(EVOLUTION_SLEEP);
+}
